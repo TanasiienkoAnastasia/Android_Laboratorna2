@@ -1,4 +1,9 @@
 package com.example.android_laboratorna2;
 
-public class FragmentOuter {
+import androidx.fragment.app.Fragment;
+
+public class FragmentOuter extends Fragment {
+    public FragmentOuter() {
+        super(R.layout.fragment_outer);
+    }
 }
