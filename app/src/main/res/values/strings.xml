@@ -7,6 +7,7 @@
     <string name="radioButtonColorYellowText">Жовтий</string>
     <string name="orderDetailsText">Інформація про замовлення: </string>
     <string name="buttonOKText">OK</string>
+    <string name="buttonCancelText">Cancel</string>
     <string name="colorText">Колір:</string>
     <string name="PriceRangeText">Ціновий діапазон</string>
     <string name="radioButtonPriceRange1Text">200 – 300 грн</string>
