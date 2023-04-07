@@ -43,7 +43,7 @@ public class FragmentPicker extends Fragment {
 
         RadioGroupColour = view.findViewById(R.id.RadioGroupColour);
         RadioGroupPriceRange = view.findViewById(R.id.RadioGroupPriceRange);
-        buttonOk = view.findViewById(R.id.buttonOk);
+        buttonOk = view.findViewById(R.id.buttonOK);
 
         buttonOk.setOnClickListener(new View.OnClickListener() {
             @Override

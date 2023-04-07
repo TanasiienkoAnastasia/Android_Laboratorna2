@@ -6,7 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.Objects;
+
+public class MainActivity extends AppCompatActivity implements FragmentPicker.OnFragmentSendDataListener  {
     private FragmentPicker fragmentPicker;
     private FragmentOutput fragmentOutput;
 
@@ -34,5 +36,26 @@ public class MainActivity extends AppCompatActivity {
 
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
+    }
+
+    @Override
+    public void onSendData(String dataType, String dateFirm) {
+        if (Objects.equals(dataType, ""))
+        {
+            CreateAlertDialog("Select type of product");
+            return;
+        }
+
+        if (Objects.equals(dateFirm, ""))
+        {
+            CreateAlertDialog("Select firm of product");
+            return;
+        }
+
+        if(!Objects.equals(dataType, "") && !Objects.equals(dateFirm, ""))
+        {
+            String text = dataType + " " + dateFirm;
+            fragmentOutput.setDataTextView(text);
+        }
     }
 }
