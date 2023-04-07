@@ -64,6 +64,42 @@
         </RadioGroup>
 
 
+        <RadioGroup
+            android:id="@+id/RadioGroupPriceRange"
+            android:layout_width="134dp"
+            android:layout_height="199dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="140dp"
+            app:layout_constraintStart_toEndOf="@+id/RadioGroupColour"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radioButtonPriceRange1Text" />
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radioButtonPriceRange2Text" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radioButtonPriceRange3Text" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radioButtonPriceRange4Text" />
+        </RadioGroup>
+
+
+
     </LinearLayout>
 
     <Button
