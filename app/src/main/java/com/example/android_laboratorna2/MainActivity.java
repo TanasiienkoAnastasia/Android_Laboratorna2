@@ -39,22 +39,22 @@ public class MainActivity extends AppCompatActivity implements FragmentPicker.On
     }
 
     @Override
-    public void onSendData(String dataType, String dateFirm) {
-        if (Objects.equals(dataType, ""))
+    public void onSendData(String typeOfColor, String rangeOfPrice) {
+        if (Objects.equals(typeOfColor, ""))
         {
-            CreateAlertDialog("Select type of product");
+            CreateAlertDialog("Select type of color");
             return;
         }
 
-        if (Objects.equals(dateFirm, ""))
+        if (Objects.equals(rangeOfPrice, ""))
         {
-            CreateAlertDialog("Select firm of product");
+            CreateAlertDialog("Select range of price");
             return;
         }
 
-        if(!Objects.equals(dataType, "") && !Objects.equals(dateFirm, ""))
+        if(!Objects.equals(typeOfColor, "") && !Objects.equals(rangeOfPrice, ""))
         {
-            String text = dataType + " " + dateFirm;
+            String text = typeOfColor + " " + rangeOfPrice;
             fragmentOutput.setDataTextView(text);
         }
     }
